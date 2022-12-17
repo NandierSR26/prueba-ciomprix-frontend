@@ -21,11 +21,13 @@ export const navLinks = {
     links_2: [
         {
             id: 5,
-            name: 'login'
+            name: 'login',
+            link: '/login'
         },
         {
             id: 6,
-            name: 'signup'
+            name: 'signup',
+            link: '/register'
         }
     ]
 }
@@ -53,28 +55,3 @@ export const ourPeopleCards = [
         link: '@achoo'
     }
 ]
-
-export const footer = {
-    footerColumn1: [
-        {
-            id: 1,
-            item: "Achoo"
-        },
-        {
-            id: 1,
-            item: "Home"
-        },
-        {
-            id: 1,
-            item: "Features"
-        },
-        {
-            id: 1,
-            item: "Pricing"
-        },
-        {
-            id: 1,
-            item: "About Us"
-        },
-    ]
-}

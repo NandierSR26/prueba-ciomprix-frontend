@@ -2,9 +2,9 @@ import { Button } from '@mui/material'
 import React from 'react'
 import { Footer } from '../../components/HomeScreen/footer'
 import { Hero } from '../../components/HomeScreen/Hero/Hero'
-import { OurMision } from '../../components/HomeScreen/OurMision/OurMision'
+import { OurMision } from '../../components/HomeScreen/OurMision/'
 import { OurPeople } from '../../components/HomeScreen/OurPeople'
-import { Sidebar } from '../../components/HomeScreen/Sidebar/Sidebar'
+import { Sidebar } from '../../components/HomeScreen/Sidebar/'
 
 export const Home = () => {
     return (

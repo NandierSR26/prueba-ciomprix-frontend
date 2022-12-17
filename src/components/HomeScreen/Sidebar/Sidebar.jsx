@@ -1,5 +1,6 @@
 import { Drawer } from '@mui/material'
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { navLinks } from '../../../constants'
 import { useUiStore } from '../../../hooks/useUiStore'
 
@@ -30,7 +31,7 @@ export const Sidebar = () => {
                     {
                         navLinks.links_2.map(link => (
                             <li key={link.id}>
-                                <a href="#" className="text-[0.8rem] font-semibold text-text tracking-widest">{link.name}</a>
+                                <Link to={link.link} className="text-[0.8rem] font-semibold text-text tracking-widest">{link.name}</Link>
                             </li>
                         ))
                     }
