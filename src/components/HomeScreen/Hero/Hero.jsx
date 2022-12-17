@@ -13,11 +13,11 @@ export const Hero = () => {
                 <h1 className="text-5xl text-center w-[65%] text-primary">A Powerful Influencer Marketing Platform For Advertisers</h1>
                 <Button
                     variant='contained'
-                    color='info'
                     sx={{
                         color: 'white',
                         borderRadius: '20px',
-                        padding: '.5rem 1.5rem'
+                        padding: '.5rem 1.5rem',
+                        backgroundColor: '#FF6C9E'
                     }}
                 >
                     start your free trial
