@@ -16,5 +16,11 @@ export const defaultTheme = createTheme({
                 elevation: 0,
             },
         }
+    },
+    breakpoints: {
+        values: {
+            xs: 0,
+            sm: 768
+        }
     }
 })

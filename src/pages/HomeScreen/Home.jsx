@@ -4,11 +4,13 @@ import { Footer } from '../../components/HomeScreen/footer'
 import { Hero } from '../../components/HomeScreen/Hero/Hero'
 import { OurMision } from '../../components/HomeScreen/OurMision/OurMision'
 import { OurPeople } from '../../components/HomeScreen/OurPeople'
+import { Sidebar } from '../../components/HomeScreen/Sidebar/Sidebar'
 
 export const Home = () => {
     return (
         <>
             <Hero />
+            <Sidebar />
             <OurMision />
             <OurPeople />
 
