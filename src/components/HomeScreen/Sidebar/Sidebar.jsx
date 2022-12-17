@@ -6,7 +6,6 @@ import { useUiStore } from '../../../hooks/useUiStore'
 export const Sidebar = () => {
 
     const { isMenuOpen, closeMenu } = useUiStore()
-    console.log(isMenuOpen);
 
     return (
         <Drawer

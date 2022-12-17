@@ -1,16 +1,15 @@
-import { Button, TextField } from '@mui/material'
 import { useFormik } from 'formik'
-import { AuthLayout } from '../../components/layout/AuthLayout'
-import * as Yup from 'yup'
+import React, { useState } from 'react'
 import { useAuthStore } from '../../hooks/useAuthStore'
-import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import * as Yup from 'yup';
+import { Button, TextField } from '@mui/material';
+import { AuthLayout } from '../../components/layout/AuthLayout';
+import { useNavigate } from 'react-router-dom';
 
+export const EditProfile = () => {
 
-export const Register = () => {
-
-    const { startRegister } = useAuthStore()
     const [picture, setPicture] = useState(null)
+    const { startEditProfile } = useAuthStore()
     const navigate = useNavigate()
 
     const changeImage = (e) => {
@@ -27,15 +26,17 @@ export const Register = () => {
         }),
         onSubmit: (data) => {
             const user = data;
-            user.avatar = picture;
-            startRegister(user)
-            navigate('/login')
+            if(picture){
+                user.avatar = picture;
+            }
+            console.log(user);
+            startEditProfile(user)
+            navigate('/edit-profile')
         }
     })
 
-
     return (
-        <AuthLayout title={'Sign Up'}>
+        <AuthLayout title={'Edit Profile'}>
             <form className="flex flex-col gap-5" onSubmit={ formik.handleSubmit }>
                 <TextField
                     type="text"
